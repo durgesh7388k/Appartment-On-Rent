@@ -1,0 +1,63 @@
+body{
+    flex-wrap: wrap;
+} 
+
+/* NAVIGATION BAR */
+.nav-content{
+    padding:5px 10px;
+    margin:10px 10px;
+}
+/* welcome section */
+.welcome::before{
+    margin-bottom: 150px;
+}
+/* services section */
+.our-services{
+    display: flex;
+    flex-direction: column;
+}
+.services h1{
+    margin-top: 20px;
+}
+.img::before{
+    margin:100px 55px;
+}
+.services-content{
+    margin-bottom:0px;
+}
+.services-content h2{
+    font-size: 1.2rem;
+    color: rgb(94, 21, 8);
+    /* margin-top: 5px; */
+}
+/* visit Section */
+.our-visit{
+    flex-direction: column;
+}
+.visit::before{
+    content:"";
+    background: url('https://www.totallandscapecare.com/wp-content/uploads/sites/5/2016/07/Rooftop-garden-nyc-AmberFreda.jpeg')no-repeat center center/cover;
+    position: absolute;
+    margin-top: 20px;
+    width:100vw;
+    height: 1050px;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* form section */
+.form input{
+    border:3px solid rgb(75, 17, 17);
+    border-radius: 5px;
+    width:70%;
+    height: 25px;
+}
+.form input[type='submit']{
+    height: 30px;
+    width: 35%;
+    margin:2px 0px;
+}
+.form input[type='reset']{
+    height: 30px;
+    width: 35%;
+    margin:2px 0px;
+}

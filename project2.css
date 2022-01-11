@@ -1,0 +1,226 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    left:0px;
+    top:0px;
+}
+#navbar a{
+    text-decoration: none;
+    color:white;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    z-index:-1;
+    opacity: 0.6;
+}
+.nav-content{
+    /* color:white; */
+    padding:5px 10px;
+    margin:10px 15px;
+}
+.nav-content:hover{
+    border:2px solid black;
+    background-color: black;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* our services */
+.welcome{
+    display: flex;
+    flex-direction: column;
+    color: rgb(48, 27, 27);
+    align-items: center;
+    justify-content: center;
+}
+.welcome::before{
+    content:"";
+    background: url('https://media.architecturaldigest.com/photos/5b7dc0c5f3a08c0bc142f98f/master/pass/GettyImages-617579982.jpg') no-repeat center center/cover;
+    width:100vw;
+    height:340px;
+    position:absolute;
+    z-index: -1;
+    opacity: 0.9;
+}
+.welcome h1{
+    margin-top: 43px;
+    font-size: 2rem;
+}
+.welcome button{
+    width: 100px;
+    margin:20px 4px;
+    padding:3px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: rgb(245, 211, 202);
+}
+#btn a{
+    text-decoration: none;
+    color:black;
+}
+/* services Section */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services h1{
+    display: block;
+    margin-top: 120px;
+    padding:10px;
+    font-size: 2rem;
+}
+.our-services{
+    display: flex;
+}
+.img img{
+    height: 200px;
+    width: 285px;
+    border-radius: 20px;
+    margin: 15px 30px;
+    /* margin: 101px 55px; */
+}
+
+.services-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    color: rgb(13, 7, 46);
+    font-size: 1.15rem;
+    font-weight: bold;
+    height: 266px;
+    width: 319px;
+    margin: 36px;
+    margin-bottom: 75px;
+    /* padding: 10px; */
+}
+.services-content h2{
+    font-size: 1.2rem;
+    color: rgb(94, 21, 8);
+    margin-top: 23px;
+}
+/* visit section */
+.visit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.visit::before{
+    content:"";
+    background: url('https://www.totallandscapecare.com/wp-content/uploads/sites/5/2016/07/Rooftop-garden-nyc-AmberFreda.jpeg')no-repeat center center/cover;
+    position: absolute;
+    width:100vw;
+    height: 430px;
+    z-index: -1;
+    opacity: 0.3;
+}
+.visit h1{
+    display: block;
+    margin: 25px auto;
+    color: rgb(46, 4, 4);
+    font-size: 2rem;
+}
+.our-visit{
+    display: flex;
+}
+.our-visit img{
+    height: 220px;
+    width: 324px;
+    border-radius: 20px;
+    margin: 20px -19px;
+}
+.visit-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border:0.1px solid black;
+    border-radius: 20px; */
+    /* background-color: #05090a; */
+    color: white;
+    height: 303;
+    width: 285px;
+    margin: 6px 36px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.visit-content h2{
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(33, 83, 37);
+}
+.visit-content p{
+    text-align: justify;
+    margin:20px;
+}
+/* contact section */
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+.contact h1{
+    margin: 20px 0px;
+    color:rgb(34, 7, 7);
+    font-size: 2rem;
+}
+.contact::before{
+    content:"";
+    background: url('https://th.bing.com/th/id/OIP.VdBJVwZXp-38IIdA0N-BPAHaDa?pid=ImgDet&rs=1')no-repeat center center/cover;
+    position:absolute;
+    height:308px;
+    width:100vw;
+    opacity: 0.8;
+    z-index:-1;
+}
+/* form section */
+.form{
+    margin: 10px;
+}
+.form input{
+    border:3px solid rgb(75, 17, 17);
+    border-radius: 5px;
+    width:400px;
+    height: 25px;
+}
+.form input[type='submit']{
+    height: 30px;
+    width: 200px;
+}
+.form input[type='reset']{
+    height: 30px;
+    width: 200px;
+}
+/* copyright Section */
+.copyright{
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5;
+    width:100vw;
+    height:30px;
+}
+
+/* Utility classes */
+.center{
+    text-align: center;
+    font-size: 1rem;
+}
